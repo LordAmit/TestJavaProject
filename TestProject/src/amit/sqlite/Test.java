@@ -29,7 +29,7 @@ public class Test {
 //			System.exit(0);
 //		}
 		
-		DbConnector dbConnector = DbConnector.getDbConnetor();
+		DbConnector dbConnector = DbConnector.returnDbConnetor();
 		ArrayList<DbObject> dbObjects = dbConnector.getResults("StormClientHandler");
 		for (DbObject dbObject : dbObjects) {
 			System.out.println("CommitID: "+dbObject.commitid);

@@ -11,7 +11,7 @@ public class DbConnector {
 	static DbConnector dbConnector = null;
 	ArrayList<DbObject> dbObjects = null;
 	
-	public static DbConnector getDbConnetor() {
+	public static DbConnector returnDbConnetor() {
 		if (dbConnector == null)
 			dbConnector = new DbConnector();
 		return dbConnector;
